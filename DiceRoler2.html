@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+em {
+  font-size: 550px;
+}
+</style>
+</head>
+<body>
+<center>
+
+<h2>My Dice Roller</h2>
+
+<em id="dice"></em>
+
+<script>
+function diceroll() {
+document.getElementById("dice").innerHTML =
+Math.floor(Math.random() * 6) + 1;
+}
+
+setInterval(diceroll, 5000);
+</script>
+
+</center>
+</body>
+</html>
